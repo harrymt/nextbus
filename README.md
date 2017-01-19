@@ -5,6 +5,10 @@ http://www.harrymt.com/nextbus
 
 Simply show the next bus from Bristol to Wells and back, using the [Transport API](http://transportapi.com/).
 
+Example API call
+
+[http://transportapi.com/v3/uk/bus/routes/FB?app_id=\<app_id>&app_key=\<app_key>](http://transportapi.com/v3/uk/bus/routes/FB?app_id=03bf8009&app_key=d9307fd91b0247c607e098d5effedc97)
+
 Uses the following technologies:
 
 - [GruntJS](http://gruntjs.com/)
