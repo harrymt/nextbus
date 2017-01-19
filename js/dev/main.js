@@ -42,17 +42,15 @@ var dataa;
 
     var current_day = new Date(data.request_time);
     $("#curr_time_1").text(formatTime(current_day));
-
-    $.each( data.departures[376], function( i, item ) {
-       if(item.direction == "Bus Station (Bristol)") {
-         $("#output_1").append("To: " + item.direction + "<br>");
-
-         $("#output_1").append(item.aimed_departure_time);
-         if(item.expected_departure_time != null && item.expected_departure_time != item.aimed_departure_time) {
+  
+    $("#output_1").append("Next bus To: " + data.departures[376][0].direction + "<br>");
+    
+     $.each( data.departures[376], function( i, item ) {
+        $("#output_1").append(item.aimed_departure_time);
+        if(item.expected_departure_time != null && item.expected_departure_time != item.aimed_departure_time) {
           $("#output_1").append(" (delayed: " + item.expected_departure_time + ")");
         }
         $("#output_1").append("<br>");
-       }
       });
     });
 
