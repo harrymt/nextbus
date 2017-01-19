@@ -12,7 +12,7 @@ var dataa;
 
 
   var url = "http://transportapi.com/v3/uk/bus/stop/01000053204/live.json?group=route&api_key=d9307fd91b0247c607e098d5effedc97&app_id=03bf8009";
-  var url_to_bristol = "http://transportapi.com/v3/uk/bus/stop/3600SOB21001/live.json?group=route&api_key=d9307fd91b0247c607e098d5effedc97&app_id=03bf8009";
+  var url_to_bristol = "http://transportapi.com/v3/uk/bus/stop/360000094/live.json?group=route&api_key=d9307fd91b0247c607e098d5effedc97&app_id=03bf8009";
 
   $.getJSON( url, {
     format: "json"
