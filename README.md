@@ -1,10 +1,25 @@
-autobet
+NextBus
 =======
 
-Show PL game statistics
+http://www.harrymt.com/nextbus
 
+Simply show the next bus from Bristol to Wells and back, using the [Transport API](http://transportapi.com/).
 
-## TODO
+Uses the following technologies:
 
-* [ ] Instead of getting data from 2 API's just get data from FPL site and use that to calculate the top Table data 
-* [ ] Fix the error with matches not being in their Gameweek. We need to page the fixtures api so each new page denotes a new gameweek
+- [GruntJS](http://gruntjs.com/)
+
+## Gruntfile.js
+
+The following Grunt tasks are used they can be found [here](Gruntfile.js).
+
+```javascript
+
+  grunt.loadNpmTasks('grunt-contrib-htmlmin'); // Minify HTML
+  grunt.loadNpmTasks('grunt-contrib-concat'); // Concatenate JS
+  grunt.loadNpmTasks('grunt-contrib-uglify'); // Minify JS
+  grunt.loadNpmTasks('grunt-contrib-sass'); // Process Sass files
+  grunt.loadNpmTasks('grunt-contrib-watch'); // On file update, do task
+  grunt.loadNpmTasks('grunt-serve'); // Local server
+
+```
